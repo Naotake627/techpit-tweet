@@ -6,7 +6,9 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
+    <%# なぜか以下のコードがエラーの原因%>
+    
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -23,10 +25,8 @@
       </div>
     <% end %>
 
-    <%# ==========ここにcontainerクラスを追加する========== %>
     <div class="container">
       <%= yield %>
     </div>
-    <%# ==========divの閉じタグを追加========== %>
   </body>
 </html>
