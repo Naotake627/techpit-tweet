@@ -1,5 +1,6 @@
 <nav class="global-nav">
   <div class="container">
+
     <% if user_signed_in? %>
     <div class="navigation">
       <ul class="left-actions">
@@ -17,12 +18,11 @@
             </div>
           </li>
         <li class="nav-item">
-
           <%= link_to "ツイート", new_tweet_path, class: "btn btn-primary tweet-btn" %>
-
         </li>
       </ul>
     </div>
+
     <% else %>
       <div class="navigation">
         <ul class="left-actions">
