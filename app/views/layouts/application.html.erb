@@ -11,7 +11,7 @@
 
   <body>
     <%= render 'partial/navbar' %>
-    
+
     <% if flash[:notice] %>
       <div class="alert alert-info">
         <%= flash[:notice] %>
@@ -26,5 +26,6 @@
     <div class="container">
       <%= yield %>
     </div>
+
   </body>
 </html>

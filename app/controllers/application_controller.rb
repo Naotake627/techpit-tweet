@@ -10,5 +10,4 @@ protect_from_forgery with: :exception
       devise_parameter_sanitizer.permit(:sign_up, keys: %i(username))
     end
 
-
 end
